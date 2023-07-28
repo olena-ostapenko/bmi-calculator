@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="radio">
+            <input type="radio" name="button" value="metric" id="metric" checked />
+            <label for="metric">
+            </label>
+            <input type="radio" name="button" value="imperial" id="imperial" />
+            <label for="imperial">
+            </label>
+        </div>
+        <div class="metric">
+            <input type="number" class="input" placeholder="cm" />
+            <input type="number" placeholder="kg">
+        </div>
+        <div class="imperial">
+            <input type="number" class="input" placeholder="ft" />
+            <input type="number" placeholder="in">
+            <input type="number" class="input" placeholder="st" />
+            <input type="number" placeholder="lbt">
+        </div>
+        <div class="result"></div>
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

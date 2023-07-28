@@ -1,0 +1,70 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ================================================== */
+body {
+  background-color: aliceblue;
+}
+
+/* ================================================== */
+.calculator {
+  max-width: 564px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+/* ================================================== */
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]+label {}
+
+input[type=radio]:checked+label {
+  background-color: rgba(52, 95, 246, 0.15);
+  background-image: url(./image/circle_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+label {
+  width: 31px;
+  height: 31px;
+  border-radius: 100%;
+  border: 1px solid rgba(216, 226, 231, 1);
+  display: inline-block;
+}
+/* ================================================== */
+input[type=number] {
+
+  max-width: 238px;
+  height: 69px;
+  border: 1px solid rgba(216, 226, 231, 1);
+  border-radius: 12px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+.hidden{
+  display: none!important;
+}
