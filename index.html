@@ -15,7 +15,10 @@
     <section class="main-calc">
         <div class="main-conteiner">
             <div class="main-conteiner_background">
-                <div class="main-conteiner_background_image"></div>
+
+                <div class="main-conteiner_background_image">
+
+                </div>
                 <div class="main-conteiner_background_text">
                     <h1>Body Mass <br>Index Calculator</h1>
                     <p class="main-conteiner_background_text__p">Better understand your weight in relation to your
@@ -47,16 +50,17 @@
 
                 <div class="input-content">
 
-
                     <div class="metric">
-                        <div class="input-content_column">
-                            <p class="calc-p">Height</p>
-                            <input type="number" class="input" placeholder="cm" id="cm" />
-                        </div>
-
-                        <div class="input-content_column">
-                            <p class="calc-p">Weight</p>
-                            <input type="number" placeholder="kg" id="kg">
+                        <div class="input-content_row">
+                            <div class="input-content_column">
+                                <p class="calc-p">Height</p>
+                                <input type="number" class="input" placeholder="cm" id="cm" />
+                            </div>
+    
+                            <div class="input-content_column">
+                                <p class="calc-p">Weight</p>
+                                <input type="number" class="input" placeholder="kg" id="kg">
+                            </div>
                         </div>
                     </div>
 
@@ -65,24 +69,28 @@
 
                         <div class="imperial">
 
-                            <div class="input-content_column">
-                                <p class="calc-p">Height</p>
-                                <input type="number" class="input" placeholder="ft" id="ft" />
+                            <div class="input-content_row">
+                                <div class="input-content_column">
+                                    <p class="calc-p">Height</p>
+                                    <input type="number" class="input" placeholder="ft" id="ft" />
+                                </div>
+    
+                                <div class="input-content_column">
+                                    <p class="calc-p"></p>
+                                    <input type="number" class="input" placeholder="in" id="in">
+                                </div>
                             </div>
 
-                            <div class="input-content_column">
-                                <p class="calc-p"></p>
-                                <input type="number" placeholder="in" id="in">
-                            </div>
-
-                            <div class="input-content_column">
-                                <p class="calc-p">Weight</p>
-                                <input type="number" class="input" placeholder="st" id="st" />
-                            </div>
-
-                            <div class="input-content_column">
-                                <p class="calc-p"></p>
-                                <input type="number" placeholder="lbt" id="lbt">
+                            <div class="input-content_row">
+                                <div class="input-content_column">
+                                    <p class="calc-p">Weight</p>
+                                    <input type="number" class="input" placeholder="st" id="st" />
+                                </div>
+    
+                                <div class="input-content_column">
+                                    <p class="calc-p"></p>
+                                    <input type="number" class="input" placeholder="lbt" id="lbt">
+                                </div>
                             </div>
 
                         </div>
@@ -90,9 +98,36 @@
                 </div>
 
 
+                <div class="div-result">
+                   
+                        <div class="result-content_yourBMI">
+                            <p class="result-title">Your BMI is...</p>
+                            <p class="result-p" hidden>Enter your height and weight and you’ll see your BMI result here</p>
+                            <p class="result" >23.4</p>
+                        </div>
+                        
+                        <div class="result-content_yourBMI">
+                            <p class="result-p">Your BMI suggests you’re a healthy weight. Your ideal weight is between <span class="yourBMI">63.3kgs - 85.2kgs</span>.</p>
+                        </div>
 
+                 
 
-                <div class="result"></div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="means-conteiner">
+            
+            <div class="means-conteiner_photo">
+                <div class="means-conteiner_photo__image"></div>
+
+            </div>
+            <div class="means-conteiner_text">
+                <div class="means-conteine__curv">
+                </div>
+                <h4>What your BMI result means</h4>
+                <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
+
             </div>
 
 
