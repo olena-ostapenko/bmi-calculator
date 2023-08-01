@@ -5,31 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bmi calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <div class="calculator">
-        <div class="radio">
-            <input type="radio" name="button" value="metric" id="metric" checked />
-            <label for="metric">
-            </label>
-            <input type="radio" name="button" value="imperial" id="imperial" />
-            <label for="imperial">
-            </label>
+    <section class="main-calc">
+        <div class="main-conteiner">
+            <div class="main-conteiner_background">
+                <div class="main-conteiner_background_image"></div>
+                <div class="main-conteiner_background_text">
+                    <h1>Body Mass <br>Index Calculator</h1>
+                    <p class="main-conteiner_background_text__p">Better understand your weight in relation to your
+                        height using our body mass index (BM) calculator. While BMI is not the sole determinant of a
+                        healthy weight, it offers a valuable starting point to evaluate your overall health and
+                        well-being.</p>
+                </div>
+
+            </div>
+            <div class="calculator">
+                <h2>Enter your details below</h2>
+
+                <div class="radio">
+                    <div class="radio-content">
+                        <input type="radio" name="unit" value="metric" id="metric" checked />
+                        <label for="metric">
+                        </label>
+                        <h3>Metric</h3>
+
+                    </div>
+                    <div class="radio-content">
+                        <input type="radio" name="unit" value="imperial" id="imperial" />
+                        <label for="imperial">
+                        </label>
+                        <h3>Imperial</h3>
+
+                    </div>
+                </div>
+
+                <div class="input-content">
+
+
+                    <div class="metric">
+                        <div class="input-content_column">
+                            <p class="calc-p">Height</p>
+                            <input type="number" class="input" placeholder="cm" id="cm" />
+                        </div>
+
+                        <div class="input-content_column">
+                            <p class="calc-p">Weight</p>
+                            <input type="number" placeholder="kg" id="kg">
+                        </div>
+                    </div>
+
+
+                    <div>
+
+                        <div class="imperial">
+
+                            <div class="input-content_column">
+                                <p class="calc-p">Height</p>
+                                <input type="number" class="input" placeholder="ft" id="ft" />
+                            </div>
+
+                            <div class="input-content_column">
+                                <p class="calc-p"></p>
+                                <input type="number" placeholder="in" id="in">
+                            </div>
+
+                            <div class="input-content_column">
+                                <p class="calc-p">Weight</p>
+                                <input type="number" class="input" placeholder="st" id="st" />
+                            </div>
+
+                            <div class="input-content_column">
+                                <p class="calc-p"></p>
+                                <input type="number" placeholder="lbt" id="lbt">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="result"></div>
+            </div>
+
+
         </div>
-        <div class="metric">
-            <input type="number" class="input" placeholder="cm" />
-            <input type="number" placeholder="kg">
-        </div>
-        <div class="imperial">
-            <input type="number" class="input" placeholder="ft" />
-            <input type="number" placeholder="in">
-            <input type="number" class="input" placeholder="st" />
-            <input type="number" placeholder="lbt">
-        </div>
-        <div class="result"></div>
-    </div>
+
+    </section>
+
+
 
 
 
