@@ -10,51 +10,61 @@ let ininput = document.getElementById("in")
 let stinput = document.getElementById("st")
 let lbtinput = document.getElementById("lbt")
 
+let enterText = document.querySelector(".result-enter_text")
+
+let resultTitle = document.querySelector(".result-title")
+
+let resultBox = document.querySelector(".div-result_row")
+let yourBMI = document.querySelector(".yourBMI")
+
+resultBox.classList.add("hidden")
+
+
+function changeText(element, newtext) {
+    element.innerHTML = newtext;
+}
+
+
 cminput.addEventListener("input", function () {
     sum()
+    enterText.classList.add("hidden")
+    resultBox.classList.remove("hidden")
+ changeText(document.querySelector(".result-title"), "Your BMI is...") 
+   
+
 })
 kginput.addEventListener("input", function () {
     sum()
+    enterText.classList.add("hidden")
+    resultBox.classList.remove("hidden")
+ changeText(document.querySelector(".result-title"), "Your BMI is...") 
 })
 ftinput.addEventListener("input", function () {
     sum()
+    enterText.classList.add("hidden")
+    resultBox.classList.remove("hidden")
+ changeText(document.querySelector(".result-title"), "Your BMI is...") 
 })
 ininput.addEventListener("input", function(){
     sum()
+    enterText.classList.add("hidden")
+    resultBox.classList.remove("hidden")
+ changeText(document.querySelector(".result-title"), "Your BMI is...") 
 })
 stinput.addEventListener("input", function(){
     sum()
+    enterText.classList.add("hidden")
+    resultBox.classList.remove("hidden")
+ changeText(document.querySelector(".result-title"), "Your BMI is...") 
 })
 lbtinput.addEventListener("input", function(){
     sum()
+    enterText.classList.add("hidden")
+    resultBox.classList.remove("hidden")
+ changeText(document.querySelector(".result-title"), "Your BMI is...") 
 })
 
 let divResult = document.querySelector(".result")
-
-// array.forEach(function(element, index){
-//     if(element.checked){
-//         if(element.value ==="metric"){
-//             imperial.classList.add("hidden")
-//             metric.classList.remove("hidden")
-//         }
-//         else{
-//             imperial.classList.remove("hidden")
-//             metric.classList.add("hidden")
-//         } 
-//     }
-//     element.addEventListener('change', function(event){
-//         event.preventDefault()
-//         console.log(element.checked, element.value);
-//         if(element.value ==="metric"){
-//             imperial.classList.add("hidden")
-//             metric.classList.remove("hidden")
-//         }
-//         else{
-//             imperial.classList.remove("hidden")
-//             metric.classList.add("hidden")
-//         } 
-//     })
-// })
 
 function divCheck(bit, div1, div2, name) {
     if (bit.value === name) {
@@ -78,7 +88,8 @@ unitsRadio.forEach(function (element, index) {
     })
 })
 
-
+let sentense = document.getElementById("sentense")
+console.log(sentense);
 
 function sum() {
     let bodyIndex = 0
@@ -94,13 +105,38 @@ function sum() {
     }
     else {
         let heightMeters = ftinput.value * 0.3 + ininput.value * 0.025
-        let weightKg = stinput.value/2.2046 + lbtinput.value *0.071429
+        let weightKg = stinput.value/0.15747 + lbtinput.value *0.035274
         console.log(heightMeters)
         console.log(weightKg)
       
         bodyIndex = bodyIndexMetric( weightKg, heightMeters)
     }
-    divResult.innerHTML = "your index: " + bodyIndex.toFixed(1)
+    divResult.innerHTML = bodyIndex.toFixed(1)
+  
+    if(bodyIndex < 16){
+        sentense.innerHTML = "Your BMI suggests you’re a severe thinness"
+    } 
+    else if(bodyIndex >=16 && bodyIndex<17){
+        sentense.innerHTML = "Your BMI suggests you’re a moderate thinness"
+    } 
+     else if(bodyIndex >=17 && bodyIndex<18.5){
+        sentense.innerHTML = "Your BMI suggests you’re a mild thinness"
+    } 
+    else if(bodyIndex >=18.5 && bodyIndex<25){
+        sentense.innerHTML = "Your BMI suggests you’re a normal"
+    } 
+    else if(bodyIndex >=25 && bodyIndex<30){
+        sentense.innerHTML = "Your BMI suggests you’re an overweight"
+    } 
+    else if(bodyIndex >=30 && bodyIndex<35){
+        sentense.innerHTML = "Your BMI suggests you’re an obese class I"
+    } 
+    else if(bodyIndex >=35 && bodyIndex<40){
+        sentense.innerHTML = "Your BMI suggests you’re an obese class II"
+    } 
+    else if(bodyIndex >=40){
+        sentense.innerHTML = "Your BMI suggests you’re an obese class III"
+    } 
 }
 
 function bodyIndexMetric(weightKg, heightM) {
@@ -108,21 +144,3 @@ function bodyIndexMetric(weightKg, heightM) {
 }
 
 
-// function bmi(weight, height) {
-//     let bmi = weight / (height**2);
-
-//     if(bmi < 18.5){
-//       return "Underweight";
-//     }else if (bmi < 25){
-//       return "Normal";
-//     }else if (bmi < 30){
-//       return "Overweight";
-//     }else{
-//       return "Obese";
-//     }
-//   }
-
-// США Единицы
-// 703 X Вес в фунтах / (высота в дюймах) 2
-//     = 703 * 176 / (59.84) 2
-// Ваш индекс массы тела в США Единицы35, 21.

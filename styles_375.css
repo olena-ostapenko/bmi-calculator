@@ -1,0 +1,230 @@
+@media (max-width: 375px) {
+
+    /* //FONTS */
+    h1 {
+      font-size: 48px;
+      line-height: 110%;
+      letter-spacing: -0.05em;
+      color: rgba(37, 51, 71, 1);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  
+    h4 {
+      font-size: 32px;
+    }
+  
+    /* ================================================== */
+    body {
+      padding: 0 0px;
+    }
+        /* calc */
+  
+    .main-calc {
+      width: 100%;
+      max-width: 375px;
+      padding: 0 0;
+    }
+
+    .main-conteiner {
+      width: 100%;
+      height: 1120px;
+      margin-bottom: 0px;
+    }
+  
+    .main-conteiner_background {
+      width: 100%;
+      max-width: 375px;
+      height: 640px;
+    }
+  
+    .main-conteiner_background_text__p {
+      width: 327px;
+    }
+
+  .result {
+        font-size: 48px;
+      }
+    .calculator {
+      max-width: 327px;
+      top: -170px;
+      padding: 24px;
+      gap: 24px;
+    }
+ 
+      input[type=number] {
+        max-width: 100%;
+      } */
+      
+      .radio {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .radio-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+      }
+      
+      .metric {
+        width: 100%;
+      } 
+
+      .imperial>.input-content_row>.input-content_column>input[type=number] {
+        max-width: 100%;
+      } 
+    
+      .imperial>.input-content_row>.input-content_column{
+        width: 50%;
+
+      }
+      .imperial>.input-content_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap:16px;
+      } 
+      
+      .input-content_row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+      }
+      
+      .input-content_column {
+        width: 100%;
+        flex-direction: column;
+      }
+      .div-result {
+        border-radius: 16px 16px 16px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .result-content_yourBMI {
+        width: 100%;
+      }
+      .div-result_row{
+        flex-direction: column;
+      }
+
+    /* ================================================== */
+    .means-conteiner {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 745px;
+        gap:48px;
+        position: relative;
+        margin-bottom: 72px;
+    }
+  
+    .means-conteine__curv {
+      display: none;
+    }
+  
+    .means-conteiner_photo__image {
+      width: 311.17px;
+      height: 354.39px;
+      background-image: url(./image/photo-man_image_375.png);
+      background-repeat: no-repeat;
+      left: 50%;
+      transform: translate(-50%, 0px);
+      position: absolute;
+  
+    }
+  
+    .means-conteiner_photo {
+      width: 100%;
+      height: 258px;
+      border-radius: 32px 32px 32px 32px;
+      position: absolute;
+      top: 96px;
+    }
+  
+    .means-conteiner_text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      position: absolute;
+      top: 403px;
+      padding: 0 23px;
+      margin-bottom: 0px;
+      margin-right: 0px;
+    }
+  
+    /* ================================================== */
+    .advice-conteiner {
+      max-width: 375px;
+      height: 879px;
+      padding: 0 19px;
+    }
+  
+    .advice-conteiner_list {
+      max-width: 686px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  
+    .advice-conteiner_list__text {
+      max-width: 582px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      text-align: left;
+    }
+    /* ================================================== */
+    .limitations-conteiner {
+      width: 100%;
+      max-width: 768px;
+      padding: 0 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 72px;
+    }
+  
+    .limitations-text_left {
+      width: 100%;
+      align-items: center;
+      gap: 32px;
+    }
+  
+    .limitations-conteiner-boxes {
+      width: 100%;
+      max-width: 686px;
+      gap: 15px;
+      position: relative;
+      top: 195px;
+    }
+  
+    .limitations-curv {
+      display: none;
+    }
+  
+    .text-center {
+      text-align: center;
+    }
+  
+    .box {
+      min-width: 335.5px;
+      margin-bottom: 9px;
+    }
+  
+    .limitations-box_text {
+      width: 271.5px;
+    }
+  
+    .visible {
+      display: none;
+    }
+  
+  }
